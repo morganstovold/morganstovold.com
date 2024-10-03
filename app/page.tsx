@@ -4,13 +4,16 @@ import { motion } from "framer-motion";
 import { MoveDown } from "lucide-react";
 import Link from "next/link";
 
+import { HeroHighlight, Highlight } from "../components/ui/hero-highlight";
+
 export default function Home() {
   return (
-    <main className="flex flex-col items-center font-[family-name:var(--font-geist-sans)] overflow-x-hidden text-neutral-400">
+    <main className="flex flex-col w-full items-center font-[family-name:var(--font-geist-sans)] overflow-x-hidden text-neutral-400">
       <section
         id="home"
-        className="relative flex flex-col gap-8 justify-center items-center min-h-screen w-full p-8"
+        className="relative dark:bg-grid-white/[0.05] bg-grid-black/[0.05] flex flex-col gap-8 justify-center items-center min-h-screen w-full p-8"
       >
+        <div className="absolute w-full pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_100%,black)]"></div>
         <h1 className="flex items-center justify-center text-5xl uppercase row-start-2 text-center leading-snug">
           <motion.div
             initial={{ opacity: 0 }}
@@ -34,7 +37,6 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
-      <div className="w-3/4 h-0.5 bg-neutral-900" />
       <section
         id="title"
         className="relative flex flex-col gap-8 justify-center items-center min-h-screen w-full p-8"
@@ -124,11 +126,7 @@ export default function Home() {
           </motion.div>
         </h1>
         <div>
-          <motion.ul
-          
-          >
-
-          </motion.ul>
+          <motion.ul></motion.ul>
         </div>
       </section>
     </main>
