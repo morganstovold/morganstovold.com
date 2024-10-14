@@ -3,14 +3,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 
-import PageCorners from "./corners";
-import Header from "./header";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
+import { ThemeProvider } from "@/components/theme-provider";
 
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
@@ -29,13 +22,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col items-center`}
-      >
-        <PageCorners />
-        <Header />
-        {children}
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${geistMono.className} antialiased bg-background`}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
