@@ -7,7 +7,7 @@ import { NavItems } from "@/data/data";
 
 export default function Home() {
   return (
-    <main className="relative font-[family-name:var(--font-geist-sans)] flex justify-center items-center flex-col overflow-hidden mx-auto">
+    <main className="relative font-[family-name:var(--font-geist-sans)] flex justify-center items-center flex-col mx-auto">
       <FloatingNav navItems={NavItems} />
       <Hero />
       <About />
