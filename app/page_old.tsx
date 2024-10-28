@@ -17,7 +17,7 @@ export default function Home() {
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            viewport={{ amount: 1 }}
+            viewport={{ amount: 0.5 }}
           >
             hey, i&apos;m morgan
           </motion.div>
@@ -28,7 +28,7 @@ export default function Home() {
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            viewport={{ amount: 1 }}
+            viewport={{ amount: 0.5 }}
           >
             <MoveDown
               onClick={() => scrollTo("about")}
@@ -45,7 +45,7 @@ export default function Home() {
         <motion.span
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ amount: 1 }}
+          viewport={{ amount: 0.5 }}
           className="w-full gap-3 items-center justify-center text-6xl capitalize row-start-2"
         >
           an aspiring software engineer
@@ -53,7 +53,7 @@ export default function Home() {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ amount: 1 }}
+          viewport={{ amount: 0.5 }}
           className="break-words text-lg text-justify"
         >
           <p>
@@ -73,7 +73,7 @@ export default function Home() {
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            viewport={{ amount: 1 }}
+            viewport={{ amount: 0.5 }}
           >
             <MoveDown
               onClick={() => scrollTo("skills")}
@@ -91,7 +91,7 @@ export default function Home() {
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            viewport={{ amount: 1 }}
+            viewport={{ amount: 0.5 }}
           >
             <span className="text-primary">qualities</span> and{" "}
             <span className="text-primary">skills</span>
