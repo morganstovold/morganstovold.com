@@ -508,3 +508,36 @@ export const Skills = [
     ),
   },
 ];
+
+export const Projects = [
+  {
+    title: "Project 1",
+    description: "This is a description of project 1",
+    tags: ["React", "TypeScript", "TailwindCSS"],
+    image: "https://via.placeholder.com/600",
+  },
+  {
+    title: "Project 2",
+    description: "This is a description of project 2",
+    tags: ["React", "TypeScript", "TailwindCSS"],
+    image: "https://via.placeholder.com/600",
+  },
+  {
+    title: "Project 3",
+    description: "This is a description of project 3",
+    tags: ["React", "TypeScript", "TailwindCSS"],
+    image: "https://via.placeholder.com/600",
+  },
+  {
+    title: "Project 4",
+    description: "This is a description of project 4",
+    tags: ["React", "TypeScript", "TailwindCSS"],
+    image: "https://via.placeholder.com/600",
+  },
+  {
+    title: "Project 5",
+    description: "This is a description of project 5",
+    tags: ["React", "TypeScript", "TailwindCSS"],
+    image: "https://via.placeholder.com/600",
+  }
+]

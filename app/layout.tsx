@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${geistMono.className} antialiased bg-backgroun overflow-x-hidden`}>
+      <body className={`${geistMono.className} antialiased bg-black-100`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
